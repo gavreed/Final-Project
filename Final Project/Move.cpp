@@ -4,8 +4,8 @@
  * Move.cpp
  * Project UID 28eb18c2c1ce490aada441e65559efdd
  *
- * <#Names#>
- * <#Uniqnames#>
+ * Gavin Reed
+ * gavreed
  *
  * Final Project - Elevators
  */
@@ -20,6 +20,24 @@ using namespace std;
 
 Move::Move(string commandString) : Move() {
     //TODO: Implement non-default constructor
+    stringstream ss(commandString);
+    
+    char type;
+    char moveType;
+    
+    ss >> type;
+    
+    if(type == 'S') {
+        isSave = true;
+    } else if(type == 'Q') {
+        isQuit = true;
+    } else if(ss.fail()) {
+        ss.clear();
+        isPass = true;
+    }
+    
+    ss >> elevatorId;
+    ss >> moveType;
 }
 
 bool Move::isValidMove(Elevator elevators[NUM_ELEVATORS]) const {
