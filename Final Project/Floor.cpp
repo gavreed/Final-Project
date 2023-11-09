@@ -31,18 +31,35 @@ void Floor::addPerson(Person newPerson, int request) {
         numPeople++;
     }
     if(request > 0) {
-        setHasUpRequest(true);
+        hasUpRequest = true;
     } else {
-        setHasDownRequest(true);
+        hasDownRequest= true;
     }
 }
 
 void Floor::removePeople(const int indicesToRemove[MAX_PEOPLE_PER_FLOOR], int numPeopleToRemove) {
-    //TODO: Implement removePeople
+    int index = 0;
+    for(int i = 0; i < numPeopleToRemove; i++) {
+        index = indicesToRemove[i];
+        for(int j = index; j < numPeople; j++) {
+            people[j] = people[j + 1];
+        }
+        numPeople--;
+    }
+    resetRequests();
 }
 
 void Floor::resetRequests() {
-    //TODO: Implement resetRequests
+    for(int i = 0; i < numPeople; i++) {
+        if(people[i].getTargetFloor() - people[i].getCurrentFloor() > 0) {
+            hasUpRequest = true;
+        } else if(people[i].getTargetFloor() - people[i].getCurrentFloor() < 0) {
+            hasDownRequest = true;
+        } else {
+            hasUpRequest = false;
+            hasDownRequest = false;
+        }
+    }
 }
 
 //////////////////////////////////////////////////////
