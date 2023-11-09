@@ -16,7 +16,6 @@
 		8693ABC72AF411AA004DA8C7 /* AI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8693ABB42AF411A9004DA8C7 /* AI.cpp */; };
 		8693ABC82AF411AA004DA8C7 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8693ABB72AF411A9004DA8C7 /* Game.cpp */; };
 		8693ABC92AF411AA004DA8C7 /* Building.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8693ABB92AF411A9004DA8C7 /* Building.cpp */; };
-		8693ABCA2AF411AA004DA8C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8693ABC02AF411AA004DA8C7 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,7 +59,6 @@
 		8693ABBD2AF411A9004DA8C7 /* morningNormalGame.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morningNormalGame.in; sourceTree = "<group>"; };
 		8693ABBE2AF411AA004DA8C7 /* SatisfactionIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SatisfactionIndex.h; sourceTree = "<group>"; };
 		8693ABBF2AF411AA004DA8C7 /* randomGame.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = randomGame.in; sourceTree = "<group>"; };
-		8693ABC02AF411AA004DA8C7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../Downloads/starter-files-16/main.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +108,6 @@
 				8693ABAD2AF411A9004DA8C7 /* AI.h */,
 				8693ABA72AF411A9004DA8C7 /* SatisfactionIndex.cpp */,
 				8693ABBE2AF411AA004DA8C7 /* SatisfactionIndex.h */,
-				8693ABC02AF411AA004DA8C7 /* main.cpp */,
 				8693ABAC2AF411A9004DA8C7 /* test.cpp */,
 				8693ABB62AF411A9004DA8C7 /* Utility.h */,
 				8693ABA82AF411A9004DA8C7 /* game.in */,
@@ -186,7 +183,6 @@
 				8693ABC22AF411AA004DA8C7 /* SatisfactionIndex.cpp in Sources */,
 				8693ABC72AF411AA004DA8C7 /* AI.cpp in Sources */,
 				8693ABC92AF411AA004DA8C7 /* Building.cpp in Sources */,
-				8693ABCA2AF411AA004DA8C7 /* main.cpp in Sources */,
 				8693ABC62AF411AA004DA8C7 /* Floor.cpp in Sources */,
 				8693ABC52AF411AA004DA8C7 /* Elevator.cpp in Sources */,
 				8693ABC12AF411AA004DA8C7 /* Move.cpp in Sources */,

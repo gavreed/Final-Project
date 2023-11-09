@@ -16,14 +16,25 @@
 using namespace std;
 
 int Floor::tick(int currentTime) {
-    //TODO: Implement tick
-
-    //returning 0 to prevent compilation error
-    return 0;
+    int sum = 0;
+    for(int i = 0; i < numPeople; i++) {
+        if(people[i].tick(currentTime)){
+            sum++;
+        }
+    }
+    return sum;
 }
 
 void Floor::addPerson(Person newPerson, int request) {
-    //TODO: Implement addPerson
+    if(numPeople < MAX_PEOPLE_PER_FLOOR) {
+        people[numPeople] = newPerson;
+        numPeople++;
+    }
+    if(request > 0) {
+        setHasUpRequest(true);
+    } else {
+        setHasDownRequest(true);
+    }
 }
 
 void Floor::removePeople(const int indicesToRemove[MAX_PEOPLE_PER_FLOOR], int numPeopleToRemove) {
