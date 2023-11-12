@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>0A7034A4-29D1-4C5D-8DCE-FD8FFCB7BAFF</key>
+		<key>09716AB1-8DDB-47D2-84AB-8AB05366B879</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,17 +15,17 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0A7034A4-29D1-4C5D-8DCE-FD8FFCB7BAFF.xcactivitylog</string>
+			<string>09716AB1-8DDB-47D2-84AB-8AB05366B879.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>S</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
@@ -40,97 +40,13 @@
 			<key>signature</key>
 			<string>Build Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>721515153.61834896</real>
+			<real>721517798.72628796</real>
 			<key>timeStoppedRecording</key>
-			<real>721515153.85210598</real>
+			<real>721517800.05394304</real>
 			<key>title</key>
 			<string>Build Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>0A7034A4-29D1-4C5D-8DCE-FD8FFCB7BAFF</string>
-		</dict>
-		<key>12AFC88E-EF89-410D-A48D-9A791A5421DB</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>12AFC88E-EF89-410D-A48D-9A791A5421DB.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>23</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Final Project project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Final Project</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Final Project</string>
-			<key>timeStartedRecording</key>
-			<real>721516897.92403603</real>
-			<key>timeStoppedRecording</key>
-			<real>721516903.48944104</real>
-			<key>title</key>
-			<string>Build Final Project</string>
-			<key>uniqueIdentifier</key>
-			<string>12AFC88E-EF89-410D-A48D-9A791A5421DB</string>
-		</dict>
-		<key>401BB88D-225E-44E7-8C43-99ABEBA9A0F0</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>401BB88D-225E-44E7-8C43-99ABEBA9A0F0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Final Project project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Final Project</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Final Project</string>
-			<key>timeStartedRecording</key>
-			<real>721516919.59128106</real>
-			<key>timeStoppedRecording</key>
-			<real>721516919.96798301</real>
-			<key>title</key>
-			<string>Build Final Project</string>
-			<key>uniqueIdentifier</key>
-			<string>401BB88D-225E-44E7-8C43-99ABEBA9A0F0</string>
+			<string>09716AB1-8DDB-47D2-84AB-8AB05366B879</string>
 		</dict>
 	</dict>
 </dict>
