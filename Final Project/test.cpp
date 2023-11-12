@@ -27,17 +27,22 @@
 #include "Utility.h"
 
 using namespace std;
+void test_Person();
 
 // declare your test functions here
 
 void start_tests() {
     // call your test functions here
-    
+    test_Person();
     return;
 }
 
 // write test functions here
 
 void test_Person() {
-    string
+    string things = "7f4t8a3";
+    
+    Person p1(things);
+    cout << p1.getTurn() << p1.getCurrentFloor() << p1.getTargetFloor() << p1.getAngerLevel() << endl;
+    
 }
