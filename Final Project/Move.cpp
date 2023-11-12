@@ -58,7 +58,17 @@ bool Move::isValidMove(Elevator elevators[NUM_ELEVATORS]) const {
 }
 
 void Move::setPeopleToPickup(const string& pickupList, const int currentFloor, const Floor& pickupFloor) {
-    //TODO: Implement setPeopleToPickup
+    numPeopleToPickup = 0;
+    for (int  i = 0; i < pickupList.size(); i++ ){
+        peopleToPickup[i] = static_cast<int>(pickupList.at(i));
+        numPeopleToPickup ++;
+        
+        
+    }
+    
+    totalSatisfaction = 0;
+    
+    
 }
 
 //////////////////////////////////////////////////////

@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F41CACC118ACE4D192BE842139FDA3DFE0CC4568",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F41CACC118ACE4D192BE842139FDA3DFE0CC4568" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "921CF7A7-9628-4FFA-AFE6-4536AC094888",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F41CACC118ACE4D192BE842139FDA3DFE0CC4568" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Final Project",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Final Project.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gavreed\/Final-Project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F41CACC118ACE4D192BE842139FDA3DFE0CC4568"
+    }
+  ]
+}
