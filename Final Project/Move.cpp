@@ -19,7 +19,6 @@
 using namespace std;
 
 Move::Move(string commandString) : Move() {
-    //TODO: Implement non-default constructor
     stringstream ss(commandString);
     
     char type;
