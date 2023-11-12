@@ -49,8 +49,11 @@ bool Move::isValidMove(Elevator elevators[NUM_ELEVATORS]) const {
     if(isPass || isQuit || isSave) {
         return true;
     }
-    
-    //Returning false to prevent compilation error
+    if(0 <= elevatorId && elevatorId < NUM_ELEVATORS && !elevators[elevatorId].isServicing()) {
+        return true;
+    } else if(0 <= targetFloor && targetFloor < NUM_FLOORS && elevators[elevatorId].getCurrentFloor() != targetFloor) {
+        return true;
+    }
     return false;
 }
 
