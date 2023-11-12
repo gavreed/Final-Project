@@ -19,6 +19,10 @@
 using namespace std;
 
 Move::Move(string commandString) : Move() {
+    if(commandString.length() == 0){
+        isPass = true;
+        return;
+    }
     stringstream ss(commandString);
     
     char type;
@@ -30,17 +34,22 @@ Move::Move(string commandString) : Move() {
         isSave = true;
     } else if(type == 'Q') {
         isQuit = true;
-    } else if(ss.fail()) {
-        ss.clear();
-        isPass = true;
+    } else if (type == 'e') {
+        ss >> elevatorId;
+        ss >> moveType;
+        if(moveType == 'f') {
+            ss >> targetFloor;
+        } else {
+            isPickup = true;
+        }
     }
-    
-    ss >> elevatorId;
-    ss >> moveType;
 }
 
 bool Move::isValidMove(Elevator elevators[NUM_ELEVATORS]) const {
     //TODO: Implement isValidMove
+    if(isPass || isQuit || isSave) {
+        return true;
+    }
     
     //Returning false to prevent compilation error
     return false;
