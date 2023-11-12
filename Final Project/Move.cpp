@@ -46,7 +46,6 @@ Move::Move(string commandString) : Move() {
 }
 
 bool Move::isValidMove(Elevator elevators[NUM_ELEVATORS]) const {
-    //TODO: Implement isValidMove
     if(isPass || isQuit || isSave) {
         return true;
     }
