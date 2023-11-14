@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright 2023 University of Michigan EECS183
  *
  * Game.cpp
@@ -23,7 +23,11 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
     std::mt19937 gen(1);
     std::uniform_int_distribution<> floorDist(0, 9);
     std::uniform_int_distribution<> angerDist(0, 3);
-
+    
+    if(!gameFile.is_open()) {
+        exit(1);
+    } 
+    
     isAIMode = isAIModeIn;
     printGameStartPrompt();
     initGame(gameFile);
