@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>BE2F4231-C182-4215-8A29-8B83B6EDBC31</key>
+		<key>982AFEBB-FF53-4FF5-908D-A93CCDEB3D3F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,49 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>BE2F4231-C182-4215-8A29-8B83B6EDBC31.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>23</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Final Project project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Final Project</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Final Project</string>
-			<key>timeStartedRecording</key>
-			<real>721695182.44788098</real>
-			<key>timeStoppedRecording</key>
-			<real>721695184.01786399</real>
-			<key>title</key>
-			<string>Build Final Project</string>
-			<key>uniqueIdentifier</key>
-			<string>BE2F4231-C182-4215-8A29-8B83B6EDBC31</string>
-		</dict>
-		<key>F1C9943C-F87D-42BF-87FE-AF4796CE84B6</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F1C9943C-F87D-42BF-87FE-AF4796CE84B6.xcactivitylog</string>
+			<string>982AFEBB-FF53-4FF5-908D-A93CCDEB3D3F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +40,13 @@
 			<key>signature</key>
 			<string>Build Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>721696090.75430405</real>
+			<real>721697896.52917194</real>
 			<key>timeStoppedRecording</key>
-			<real>721696092.33628297</real>
+			<real>721697896.88275504</real>
 			<key>title</key>
 			<string>Build Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>F1C9943C-F87D-42BF-87FE-AF4796CE84B6</string>
+			<string>982AFEBB-FF53-4FF5-908D-A93CCDEB3D3F</string>
 		</dict>
 	</dict>
 </dict>

@@ -55,13 +55,52 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
 // You *must* revise this function according to the RME and spec
 bool Game::isValidPickupList(const string& pickupList, const int pickupFloorNum) const {
     
+    bool valid = true;
+    for(int i = 0; i < pickupList.length(); i++)
+    {
+        for(int j = 0; j < pickupList.length(); j++)
+        {
+            if(pickupList[i] == pickupList[j] && i != j)
+            {
+                valid = false;
+            }
+        }
+    }
     
+    if(pickupList.length() > 9)
+    {
+        valid = false;
+    }
+    
+    if(pickupList.length() <= ELEVATOR_CAPACITY)
+    {
+        valid = false;
+    }
     
     for(int i = 0; i < pickupList.length(); i++) {
         if((pickupList.at(i) - '0') >= building.getFloorByFloorNum(pickupFloorNum).getNumPeople()) {
             return false;
         }
     }
+    
+    int first = building.getFloorByFloorNum(pickupFloorNum).getPersonByIndex(pickupList.at(0) - '0').getTargetFloor() - building.getFloorByFloorNum(pickupFloorNum).getPersonByIndex(pickupList.at(0) - '0').getCurrentFloor();
+    int second = 0;
+    for(int i = 1; i < pickupList.length(); i++)
+    {
+        second = building.getFloorByFloorNum(pickupFloorNum).getPersonByIndex(pickupList.at(i) - '0').getTargetFloor() - building.getFloorByFloorNum(pickupFloorNum).getPersonByIndex(pickupList.at(i) - '0').getCurrentFloor();
+        if(first > 0) {
+            if(second <= 0) {
+                return false;
+            }
+        } else {
+            if(second >= 0) {
+                return false;
+            }
+        }
+        building.getFloorByFloorNum(pickupFloorNum).getPersonByIndex(pickupList.at(i) - '0');
+    }
+    
+    
     return true;
 }
 
