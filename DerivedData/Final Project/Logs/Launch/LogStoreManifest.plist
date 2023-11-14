@@ -6,14 +6,14 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>68E37B59-C24C-4F7C-A182-DD651A1C4095</key>
+		<key>02491A3F-A359-485D-997B-DBFC004E08D9</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>09716AB1-8DDB-47D2-84AB-8AB05366B879</string>
+			<string>BE2F4231-C182-4215-8A29-8B83B6EDBC31</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -21,7 +21,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
+				<integer>23</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-Final Project-2023.11.12_16-36-38--0500.xcresult</string>
+			<string>Run-Final Project-2023.11.14_17-53-02--0500.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -40,7 +40,7 @@
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -48,7 +48,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
+				<integer>23</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Final Project project</string>
@@ -59,13 +59,13 @@
 			<key>signature</key>
 			<string>Run Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>721517798.72619796</real>
+			<real>721695182.44775796</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>68E37B59-C24C-4F7C-A182-DD651A1C4095</string>
+			<string>02491A3F-A359-485D-997B-DBFC004E08D9</string>
 		</dict>
 	</dict>
 </dict>

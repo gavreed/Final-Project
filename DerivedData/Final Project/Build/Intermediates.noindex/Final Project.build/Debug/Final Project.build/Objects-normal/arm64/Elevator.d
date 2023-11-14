@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/Elevator.cpp \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/Elevator.h \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/Utility.h \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/Person.h
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/Elevator.cpp \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/Elevator.h \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/Utility.h \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/Person.h
