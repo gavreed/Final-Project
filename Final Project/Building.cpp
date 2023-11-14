@@ -22,23 +22,21 @@ void Building::spawnPerson(Person newPerson){
 }
 
 void Building::update(Move move){
+    
+    int currentFloor = elevators[move.getElevatorId()].getCurrentFloor();
+    // Not sure if elevators current floor is where people's current floor is
     int targetFloor = move.getTargetFloor();
-    if(move.isPassMove() == true)
-    {
+    if (move.isPassMove()) {
         return;
     }
-    else if(move.isPickupMove() == true)
-    {
+    else if (move.isPickupMove()) {
         int newPeople[MAX_PEOPLE_PER_FLOOR];
         move.copyListOfPeopleToPickup(newPeople);
         int numPeopleToRemove = move.getNumPeopleToPickup();
-        
-        floors[targetFloor].removePeople(newPeople, numPeopleToRemove);
-        
+        floors[currentFloor].removePeople(newPeople, numPeopleToRemove); //changes to floors[currentfloor] check above, done using elevator
         elevators[move.getElevatorId()].serviceRequest(targetFloor);
-    }
-    else if(move.isPassMove() == false && move.isPickupMove() == false && move.isSaveMove() == false && move.isQuitMove() == false)
-    {
+        }
+    else if (!move.isPassMove() && !move.isPickupMove()) {
         elevators[move.getElevatorId()].serviceRequest(targetFloor);
     }
 }

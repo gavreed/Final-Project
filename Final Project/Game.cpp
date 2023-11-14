@@ -54,6 +54,14 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
 // Stub for isValidPickupList for Core
 // You *must* revise this function according to the RME and spec
 bool Game::isValidPickupList(const string& pickupList, const int pickupFloorNum) const {
+    
+    
+    
+    for(int i = 0; i < pickupList.length(); i++) {
+        if((pickupList.at(i) - '0') >= building.getFloorByFloorNum(pickupFloorNum).getNumPeople()) {
+            return false;
+        }
+    }
     return true;
 }
 

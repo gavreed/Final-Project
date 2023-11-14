@@ -19,10 +19,8 @@ using namespace std;
 
 Person::Person(string inputString) : Person() {
     stringstream ss(inputString);
-    ss >> turn;
-    ss >> currentFloor;
-    ss >> targetFloor;
-    ss >> angerLevel;
+    char junk;
+    ss >> turn >> junk >> currentFloor >> junk >> targetFloor >> junk >> angerLevel;
 }
 
 bool Person::tick(int currentTime) {
