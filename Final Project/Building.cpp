@@ -15,18 +15,59 @@
 using namespace std;
 
 void Building::spawnPerson(Person newPerson){
-    //TODO: Implement spawnPerson
+    int currentFloor = newPerson.getCurrentFloor();
+    int isUpRequest = newPerson.getTurn();
+    
+    floors[currentFloor].addPerson(newPerson, isUpRequest);
 }
 
 void Building::update(Move move){
-    //TODO: Implement update
+    int targetFloor = move.getTargetFloor();
+    if(move.isPassMove() == true)
+    {
+        return;
+    }
+    else if(move.isPickupMove() == true)
+    {
+        int newPeople[MAX_PEOPLE_PER_FLOOR];
+        move.copyListOfPeopleToPickup(newPeople);
+        int numPeopleToRemove = move.getNumPeopleToPickup();
+        
+        floors[targetFloor].removePeople(newPeople, numPeopleToRemove);
+        
+        elevators[move.getElevatorId()].serviceRequest(targetFloor);
+    }
+    else if(move.isPassMove() == false && move.isPickupMove() == false && move.isSaveMove() == false && move.isQuitMove() == false)
+    {
+        elevators[move.getElevatorId()].serviceRequest(targetFloor);
+    }
 }
 
 int Building::tick(Move move){
-    //TODO: Implement tick
-
-    //returning 0 to prevent compilation error
-    return 0;
+    int explodedPeople = 0;
+    time++;
+    setTime(time);
+    
+    update(move);
+    
+    for(int i = 0; i < NUM_ELEVATORS; i++)
+    {
+        elevators[i].tick(time);
+    }
+    
+    for(int i = 0; i < NUM_FLOORS; i++)
+    {
+        floors[i].tick(time);
+        for(int j = 0; j < MAX_PEOPLE_PER_FLOOR; j++)
+        {
+            if(floors[i].getPersonByIndex(j).getAngerLevel() > MAX_ANGER)
+            {
+                explodedPeople++;
+            }
+        }
+    }
+    
+    return explodedPeople;
 }
 
 //////////////////////////////////////////////////////
