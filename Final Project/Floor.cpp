@@ -17,11 +17,15 @@ using namespace std;
 
 int Floor::tick(int currentTime) {
     int sum = 0;
+    
     for(int i = 0; i < numPeople; i++) {
         if(people[i].tick(currentTime)){
             sum++;
+            int rmPeople[1] = {i};
+            removePeople( rmPeople , 1);
         }
     }
+    
     return sum;
 }
 
