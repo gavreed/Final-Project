@@ -42,19 +42,16 @@ void Floor::addPerson(Person newPerson, int request) {
 }
 
 void Floor::removePeople(const int indicesToRemove[MAX_PEOPLE_PER_FLOOR], int numPeopleToRemove) {
-    int index = 0;
-    int count = 0;
     Person norm;
     for(int i = 0; i < numPeopleToRemove; i++) {
-        index = indicesToRemove[i] - count;
-        for(int j = index; j < numPeople - 1; j++) {
-            people[j] = people[j + 1];
-        }
-        count++;
+        people[indicesToRemove[i]] = norm;
         numPeople--;
     }
-    for(int i = numPeople - numPeopleToRemove; i < numPeople; i++) {
-        people[i] = norm;
+    for(int i = 0; i < MAX_PEOPLE_PER_FLOOR - 1; i++) {
+        for(int j = 0; j < MAX_PEOPLE_PER_FLOOR - 1; j++) {
+            people[j] = people[j + 1];
+            people[j + 1] = norm;
+        }
     }
     resetRequests();
 }
