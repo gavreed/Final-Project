@@ -44,13 +44,6 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
     int gameTick = 0;
     int pTick = 0;
     while(true) {
-        building.prettyPrintBuilding(cout);
-        satisfactionIndex.printSatisfaction(cout, false);
-        checkForGameEnd();
-        
-        Move nextMove = getMove();
-        update(nextMove);
-        
         gameTick = building.getTime();
         for(int i = 0; i < index; i++) {
             pTick = peopleToAdd[i].getTurn();
@@ -58,6 +51,13 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
                 building.spawnPerson(peopleToAdd[i]);
             }
         }
+        
+        building.prettyPrintBuilding(cout);
+        satisfactionIndex.printSatisfaction(cout, false);
+        checkForGameEnd();
+        
+        Move nextMove = getMove();
+        update(nextMove);
     }
 }
 
