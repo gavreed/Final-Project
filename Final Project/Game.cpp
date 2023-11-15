@@ -32,7 +32,7 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
     printGameStartPrompt();
     initGame(gameFile);
     
-    Person peopleToAdd[100] = {};
+    Person peopleToAdd[1000] = {};
     int index = 0;
     string personString;
     while (getline(gameFile, personString)) {
@@ -41,22 +41,23 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
         index++;
     }
     
+    int gameTick = 0;
+    int pTick = 0;
     while(true) {
-        int gameTick = building.getTime();
-        
-        for(int i = 0; i < index; i++) {
-            int pTick = peopleToAdd[i].getTurn();
-            if(pTick == gameTick) {
-                building.spawnPerson(peopleToAdd[i]);
-            }
-        }
-        
         building.prettyPrintBuilding(cout);
         satisfactionIndex.printSatisfaction(cout, false);
         checkForGameEnd();
         
         Move nextMove = getMove();
         update(nextMove);
+        
+        gameTick = building.getTime();
+        for(int i = 0; i < index; i++) {
+            pTick = peopleToAdd[i].getTurn();
+            if(pTick == gameTick) {
+                building.spawnPerson(peopleToAdd[i]);
+            }
+        }
     }
 }
 

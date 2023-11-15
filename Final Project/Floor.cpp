@@ -17,15 +17,15 @@ using namespace std;
 
 int Floor::tick(int currentTime) {
     int sum = 0;
+    int rmPeople[MAX_PEOPLE_PER_FLOOR] = {};
     
     for(int i = 0; i < numPeople; i++) {
         if(people[i].tick(currentTime)){
+            rmPeople[sum] = i;
             sum++;
-            int rmPeople[1] = {i};
-            removePeople(rmPeople , 1);
         }
     }
-    
+    removePeople(rmPeople, sum);
     return sum;
 }
 
