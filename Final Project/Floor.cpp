@@ -22,7 +22,7 @@ int Floor::tick(int currentTime) {
         if(people[i].tick(currentTime)){
             sum++;
             int rmPeople[1] = {i};
-            removePeople( rmPeople , 1);
+            removePeople(rmPeople , 1);
         }
     }
     
