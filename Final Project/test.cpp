@@ -28,12 +28,14 @@
 
 using namespace std;
 void test_Person();
+void test_Floor();
 
 // declare your test functions here
 
 void start_tests() {
     // call your test functions here
     test_Person();
+    test_Floor();
     return;
 }
 
@@ -44,5 +46,27 @@ void test_Person() {
     
     Person p1(things);
     cout << p1.getTurn() << p1.getCurrentFloor() << p1.getTargetFloor() << p1.getAngerLevel() << endl;
+    
+}
+
+void test_Floor() {
+    int index = 0;
+    int count = 0;
+    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int arr2[6] = {0, 2, 4, 6, 8};
+    for(int i = 0; i < 6; i++) {
+        index = arr2[i] - count;
+        for(int j = index; j < 9; j++) {
+                arr[j] = arr[j + 1];
+        }
+        count++;
+    }
+    for(int i = 4; i < 10; i++) {
+        arr[i] = 0;
+    }
+    for(int i = 0; i < 10; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
     
 }

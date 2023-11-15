@@ -1,9 +1,9 @@
 dependencies: \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/AI.cpp \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/AI.h \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/Utility.h \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/Move.h \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/Floor.h \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/Person.h \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/Elevator.h \
-  /Users/evanzhao/code/xcode_final_project/Final-Project/Final\ Project/BuildingState.h
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/AI.cpp \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/AI.h \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/Utility.h \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/Move.h \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/Floor.h \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/Person.h \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/Elevator.h \
+  /Users/gavinreed/Documents/Final-Project\ 3/Final\ Project/BuildingState.h

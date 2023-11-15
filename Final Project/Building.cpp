@@ -4,8 +4,8 @@
  * Building.cpp
  * Project UID 28eb18c2c1ce490aada441e65559efdd
  *
- * <#Names#>
- * <#Uniqnames#>
+ * Matthew Leguizamo
+ * mleguiza
  *
  * Final Project - Elevators
  */
@@ -15,10 +15,11 @@
 using namespace std;
 
 void Building::spawnPerson(Person newPerson){
-    int currentFloor = newPerson.getCurrentFloor();
-    int isUpRequest = newPerson.getTurn();
     
-    floors[currentFloor].addPerson(newPerson, isUpRequest);
+    int currentFloor = newPerson.getCurrentFloor();
+    int request = newPerson.getTargetFloor() - newPerson.getCurrentFloor();
+    
+    floors[currentFloor].addPerson(newPerson, request);
 }
 
 void Building::update(Move move){
@@ -42,30 +43,18 @@ void Building::update(Move move){
 }
 
 int Building::tick(Move move){
-    int explodedPeople = 0;
+    
     time++;
-    setTime(time);
-    
     update(move);
+    int numExploded = 0;
     
-    for(int i = 0; i < NUM_ELEVATORS; i++)
-    {
+    for (int i = 0; i < NUM_ELEVATORS; i++) {
         elevators[i].tick(time);
     }
-    
-    for(int i = 0; i < NUM_FLOORS; i++)
-    {
-        floors[i].tick(time);
-        for(int j = 0; j < MAX_PEOPLE_PER_FLOOR; j++)
-        {
-            if(floors[i].getPersonByIndex(j).getAngerLevel() > MAX_ANGER)
-            {
-                explodedPeople++;
-            }
-        }
+    for (int i = 0; i < NUM_FLOORS; i++) {
+        numExploded += floors[i].tick(time);
     }
-    
-    return explodedPeople;
+    return numExploded;
 }
 
 //////////////////////////////////////////////////////
