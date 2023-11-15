@@ -50,14 +50,5 @@ void test_Person() {
 }
 
 void test_Floor() {
-
-    int arr[10] = {0, 2, 0, 4, 5, 0, 7, 8, 9, 0};
-    for(int i = 0; i < 10; i++) {
-        for(int j = 0; j < 10; j++)
-    }
-    for(int i = 0; i < 10; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
     
 }

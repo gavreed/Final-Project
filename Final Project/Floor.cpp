@@ -49,8 +49,10 @@ void Floor::removePeople(const int indicesToRemove[MAX_PEOPLE_PER_FLOOR], int nu
     }
     for(int i = 0; i < MAX_PEOPLE_PER_FLOOR - 1; i++) {
         for(int j = 0; j < MAX_PEOPLE_PER_FLOOR - 1; j++) {
-            people[j] = people[j + 1];
-            people[j + 1] = norm;
+            if(people[j].getTargetFloor() == norm.getTargetFloor() && people[j].getCurrentFloor() == norm.getCurrentFloor()) {
+                people[j] = people[j + 1];
+                people[j + 1] = norm;
+            }
         }
     }
     resetRequests();

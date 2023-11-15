@@ -6,10 +6,10 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>A5391E92-19C2-4FA5-8EFC-DFEB70DB36DE</key>
+		<key>15D027D5-AD8E-44BE-B1F1-D573466AF664</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>C3EEABEA-42D9-422A-87DA-CF4B78F772F4</string>
+			<string>6A76D207-744E-467C-9EA5-E892ECA81FDE</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-Final Project-2023.11.14_19-32-02--0500.xcresult</string>
+			<string>Run-Final Project-2023.11.14_21-35-59--0500.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -59,13 +59,13 @@
 			<key>signature</key>
 			<string>Run Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>721701122.58227098</real>
+			<real>721708559.57110095</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>A5391E92-19C2-4FA5-8EFC-DFEB70DB36DE</string>
+			<string>15D027D5-AD8E-44BE-B1F1-D573466AF664</string>
 		</dict>
 	</dict>
 </dict>

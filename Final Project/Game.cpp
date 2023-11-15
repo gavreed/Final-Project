@@ -31,21 +31,30 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
     isAIMode = isAIModeIn;
     printGameStartPrompt();
     initGame(gameFile);
-
-    while (true) {
-        int src = floorDist(gen);
-        int dst = floorDist(gen);
-        if (src != dst) {
-            std::stringstream ss;
-            ss << "0f" << src << "t" << dst << "a" << angerDist(gen);
-            Person p(ss.str());
-            building.spawnPerson(p);
+    
+    Person peopleToAdd[100] = {};
+    int index = 0;
+    string personString;
+    while (getline(gameFile, personString)) {
+        Person p(personString);
+        peopleToAdd[index] = p;
+        index++;
+    }
+    
+    while(true) {
+        int gameTick = building.getTime();
+        
+        for(int i = 0; i < index; i++) {
+            int pTick = peopleToAdd[i].getTurn();
+            if(pTick + 1 == gameTick) {
+                building.spawnPerson(peopleToAdd[i]);
+            }
         }
-
+        
         building.prettyPrintBuilding(cout);
         satisfactionIndex.printSatisfaction(cout, false);
         checkForGameEnd();
-
+        
         Move nextMove = getMove();
         update(nextMove);
     }
@@ -55,26 +64,25 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
 // You *must* revise this function according to the RME and spec
 bool Game::isValidPickupList(const string& pickupList, const int pickupFloorNum) const {
     
-    bool valid = true;
     for(int i = 0; i < pickupList.length(); i++)
     {
         for(int j = 0; j < pickupList.length(); j++)
         {
             if(pickupList[i] == pickupList[j] && i != j)
             {
-                valid = false;
+                return false;
             }
         }
     }
     
     if(pickupList.length() > 9)
     {
-        valid = false;
+        return false;
     }
     
     if(pickupList.length() <= ELEVATOR_CAPACITY)
     {
-        valid = false;
+        return false;
     }
     
     for(int i = 0; i < pickupList.length(); i++) {
