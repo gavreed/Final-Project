@@ -49,13 +49,13 @@ bool Move::isValidMove(Elevator elevators[NUM_ELEVATORS]) const {
     if(isPass || isQuit || isSave) {
         return true;
     }
-    if(elevators[elevatorId].isServicing() || isPickup){
-        if(0 <= elevatorId && elevatorId < NUM_ELEVATORS && !(elevators[elevatorId].isServicing())) {
+    
+    if (isPickup){
+         if(0 <= elevatorId && elevatorId < NUM_ELEVATORS && !(elevators[elevatorId].isServicing())) {
             return true;
         }
-    }
-    else if (elevators[elevatorId].isServicing() ){
-         if(0 <= targetFloor && targetFloor < NUM_FLOORS && elevators[elevatorId].getCurrentFloor() != targetFloor) {
+    } else {
+        if(0 <= elevatorId && elevatorId < NUM_ELEVATORS && !(elevators[elevatorId].isServicing()) && 0 <= targetFloor && targetFloor < NUM_FLOORS && elevators[elevatorId].getCurrentFloor() != targetFloor) {
             return true;
         }
     }
@@ -66,6 +66,7 @@ void Move::setPeopleToPickup(const string& pickupList, const int currentFloor, c
     numPeopleToPickup = 0;
     totalSatisfaction = 0;
     int maxFloor = 0;
+    int maxDiff = 0;
     for (int  i = 0; i < pickupList.size(); i++ ){
         numPeopleToPickup ++;
         
@@ -74,15 +75,12 @@ void Move::setPeopleToPickup(const string& pickupList, const int currentFloor, c
         
         totalSatisfaction += MAX_ANGER - pickupFloor.getPersonByIndex(peopleToPickup[i]).getAngerLevel();
         
-        if(maxFloor < abs((currentFloor - pickupFloor.getPersonByIndex(peopleToPickup[i]).getTargetFloor()))){
+        if(maxDiff < abs(currentFloor - pickupFloor.getPersonByIndex(peopleToPickup[i]).getTargetFloor())){
+            maxDiff = abs(currentFloor - pickupFloor.getPersonByIndex(peopleToPickup[i]).getTargetFloor());
             maxFloor = pickupFloor.getPersonByIndex(peopleToPickup[i]).getTargetFloor();
         }
-        targetFloor = maxFloor;
-        
-        
     }
-    
-    
+    targetFloor = maxFloor;    
 }
 
 //////////////////////////////////////////////////////

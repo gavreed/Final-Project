@@ -78,7 +78,7 @@ bool Game::isValidPickupList(const string& pickupList, const int pickupFloorNum)
     }
     
     for(int i = 0; i < pickupList.length(); i++) {
-        if((pickupList.at(i) - '0') >= building.getFloorByFloorNum(pickupFloorNum).getNumPeople()) {
+        if((int)(pickupList.at(i) - '0') >= building.getFloorByFloorNum(pickupFloorNum).getNumPeople()) {
             return false;
         }
     }
