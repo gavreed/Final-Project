@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>982AFEBB-FF53-4FF5-908D-A93CCDEB3D3F</key>
+		<key>99EFB395-226F-484D-8775-171E75F852B7</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,91 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>982AFEBB-FF53-4FF5-908D-A93CCDEB3D3F.xcactivitylog</string>
+			<string>99EFB395-226F-484D-8775-171E75F852B7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>24</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Final Project project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Final Project</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Final Project</string>
+			<key>timeStartedRecording</key>
+			<real>721699440.74913597</real>
+			<key>timeStoppedRecording</key>
+			<real>721699445.29864001</real>
+			<key>title</key>
+			<string>Build Final Project</string>
+			<key>uniqueIdentifier</key>
+			<string>99EFB395-226F-484D-8775-171E75F852B7</string>
+		</dict>
+		<key>BE2F4231-C182-4215-8A29-8B83B6EDBC31</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BE2F4231-C182-4215-8A29-8B83B6EDBC31.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>23</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Final Project project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Final Project</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Final Project</string>
+			<key>timeStartedRecording</key>
+			<real>721695182.44788098</real>
+			<key>timeStoppedRecording</key>
+			<real>721695184.01786399</real>
+			<key>title</key>
+			<string>Build Final Project</string>
+			<key>uniqueIdentifier</key>
+			<string>BE2F4231-C182-4215-8A29-8B83B6EDBC31</string>
+		</dict>
+		<key>F6A9DD5D-C72B-4FC3-8E15-1B94E75C07AA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F6A9DD5D-C72B-4FC3-8E15-1B94E75C07AA.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,13 +124,13 @@
 			<key>signature</key>
 			<string>Build Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>721697896.52917194</real>
+			<real>721699455.06208503</real>
 			<key>timeStoppedRecording</key>
-			<real>721697896.88275504</real>
+			<real>721699455.20057297</real>
 			<key>title</key>
 			<string>Build Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>982AFEBB-FF53-4FF5-908D-A93CCDEB3D3F</string>
+			<string>F6A9DD5D-C72B-4FC3-8E15-1B94E75C07AA</string>
 		</dict>
 	</dict>
 </dict>
