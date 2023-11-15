@@ -50,5 +50,12 @@ void test_Person() {
 }
 
 void test_Floor() {
-    
+    string pickupList = "193";
+    char j;
+    for(int i = 0; i < pickupList.length(); i++) {
+        j = pickupList[i];
+        if((int)(j - '0') >= 7) {
+            cout << j << " false" << endl;
+        }
+    }
 }

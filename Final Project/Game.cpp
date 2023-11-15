@@ -46,7 +46,7 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
         
         for(int i = 0; i < index; i++) {
             int pTick = peopleToAdd[i].getTurn();
-            if(pTick + 1 == gameTick) {
+            if(pTick == gameTick) {
                 building.spawnPerson(peopleToAdd[i]);
             }
         }
@@ -75,12 +75,7 @@ bool Game::isValidPickupList(const string& pickupList, const int pickupFloorNum)
         }
     }
     
-    if(pickupList.length() > 9)
-    {
-        return false;
-    }
-    
-    if(pickupList.length() <= ELEVATOR_CAPACITY)
+    if(pickupList.length() > ELEVATOR_CAPACITY)
     {
         return false;
     }
