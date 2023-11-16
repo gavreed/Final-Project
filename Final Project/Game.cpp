@@ -20,9 +20,6 @@ using namespace std;
 // Stub for playGame for Core, which plays random games
 // You *must* revise this function according to the RME and spec
 void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
-    std::mt19937 gen(1);
-    std::uniform_int_distribution<> floorDist(0, 9);
-    std::uniform_int_distribution<> angerDist(0, 3);
     
     if(!gameFile.is_open()) {
         exit(1);
@@ -43,6 +40,13 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
     
     int gameTick = 0;
     int pTick = 0;
+    for(int i = 0; i < index; i++) {
+        pTick = peopleToAdd[i].getTurn();
+        if(pTick == 0) {
+            building.spawnPerson(peopleToAdd[i]);
+        }
+    }
+    
     while(true) {
         gameTick = building.getTime();
         for(int i = 0; i < index; i++) {

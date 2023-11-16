@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>2A7A4FC8-31D6-4931-B24D-A6729D85FAE1</key>
+		<key>2BF754C4-D1A6-4155-8EDD-83DEE21D9C38</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>2A7A4FC8-31D6-4931-B24D-A6729D85FAE1.xcactivitylog</string>
+			<string>2BF754C4-D1A6-4155-8EDD-83DEE21D9C38.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,17 +32,17 @@
 				<integer>0</integer>
 			</dict>
 			<key>signature</key>
-			<string>eyJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCIsInR5cGUiOnsiYnVpbGRTeXN0ZW1UYXNrIjp7fX19</string>
+			<string>eyJibHVlcHJpbnRQcm92aWRlcl9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZ2F2aW5yZWVkXC9GaW5hbC1Qcm9qZWN0IDNcL0ZpbmFsIFByb2plY3QueGNvZGVwcm9qIiwidHlwZSI6eyJibHVlcHJpbnRQcm92aWRlciI6e319fQ==</string>
 			<key>timeStartedRecording</key>
-			<real>721753436.387954</real>
+			<real>721767953.35689902</real>
 			<key>timeStoppedRecording</key>
 			<real>63113904000</real>
 			<key>title</key>
 			<string>Build Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>2A7A4FC8-31D6-4931-B24D-A6729D85FAE1</string>
+			<string>2BF754C4-D1A6-4155-8EDD-83DEE21D9C38</string>
 		</dict>
-		<key>D05B7D5A-4849-4E06-9D81-5447EEF2D2FA</key>
+		<key>CD96FCE1-D98E-407E-ACDF-033D5ED37EE7</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -51,7 +51,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>D05B7D5A-4849-4E06-9D81-5447EEF2D2FA.xcactivitylog</string>
+			<string>CD96FCE1-D98E-407E-ACDF-033D5ED37EE7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -68,15 +68,15 @@
 				<integer>0</integer>
 			</dict>
 			<key>signature</key>
-			<string>eyJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCIsInR5cGUiOnsiYnVpbGRTeXN0ZW1UYXNrIjp7fX19</string>
+			<string>eyJibHVlcHJpbnRQcm92aWRlcl9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZ2F2aW5yZWVkXC9GaW5hbC1Qcm9qZWN0IDNcL0ZpbmFsIFByb2plY3QueGNvZGVwcm9qIiwidHlwZSI6eyJibHVlcHJpbnRQcm92aWRlciI6e319fQ==</string>
 			<key>timeStartedRecording</key>
-			<real>721753436.387954</real>
+			<real>721767953.35689902</real>
 			<key>timeStoppedRecording</key>
 			<real>63113904000</real>
 			<key>title</key>
 			<string>Build Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>D05B7D5A-4849-4E06-9D81-5447EEF2D2FA</string>
+			<string>CD96FCE1-D98E-407E-ACDF-033D5ED37EE7</string>
 		</dict>
 	</dict>
 </dict>
