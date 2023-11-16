@@ -4,8 +4,8 @@
  * Game.cpp
  * Project UID 28eb18c2c1ce490aada441e65559efdd
  *
- * <#Names#>
- * <#Uniqnames#>
+ * Gavin Reed, Evan Zhoa, Alex Temnorod, Matthew Leguizamo
+ * gavreed, efz, alextemn, mleguiza
  *
  * Final Project - Elevators
  */
@@ -32,14 +32,17 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
     Person peopleToAdd[1000] = {};
     int index = 0;
     string personString;
+    getline(gameFile, personString);
     while (getline(gameFile, personString)) {
         Person p(personString);
         peopleToAdd[index] = p;
         index++;
     }
     
+    
     int gameTick = 0;
     int pTick = 0;
+    
     for(int i = 0; i < index; i++) {
         pTick = peopleToAdd[i].getTurn();
         if(pTick == 0) {
@@ -48,6 +51,13 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
     }
     
     while(true) {
+        building.prettyPrintBuilding(cout);
+        satisfactionIndex.printSatisfaction(cout, false);
+        checkForGameEnd();
+        
+        Move nextMove = getMove();
+        update(nextMove);
+        
         gameTick = building.getTime();
         for(int i = 0; i < index; i++) {
             pTick = peopleToAdd[i].getTurn();
@@ -55,13 +65,6 @@ void Game::playGame(bool isAIModeIn, ifstream& gameFile) {
                 building.spawnPerson(peopleToAdd[i]);
             }
         }
-        
-        building.prettyPrintBuilding(cout);
-        satisfactionIndex.printSatisfaction(cout, false);
-        checkForGameEnd();
-        
-        Move nextMove = getMove();
-        update(nextMove);
     }
 }
 

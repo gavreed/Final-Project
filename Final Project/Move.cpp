@@ -4,8 +4,8 @@
  * Move.cpp
  * Project UID 28eb18c2c1ce490aada441e65559efdd
  *
- * Gavin Reed
- * gavreed
+ * Gavin Reed, Evan Zhoa, Alex Temnorod, Matthew Leguizamo
+ * gavreed, efz, alextemn, mleguiza
  *
  * Final Project - Elevators
  */
