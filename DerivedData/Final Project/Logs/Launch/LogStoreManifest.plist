@@ -6,10 +6,10 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>BC609C5C-7E6C-4EFE-8098-8F43D0A41410</key>
+		<key>DD7AD51D-C478-4F70-967C-B6B15F3A6253</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>794F4AED-82BC-44D4-B55E-B171F6AE7734</string>
+			<string>2B5D07E9-17B1-4963-8E98-9B57209D21F8</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-Final Project-2023.11.28_15-08-19--0500.xcresult</string>
+			<string>Run-Final Project-2023.11.28_15-52-31--0500.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -59,13 +59,74 @@
 			<key>signature</key>
 			<string>Run Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>722894899.09251595</real>
+			<real>722897551.06671</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>BC609C5C-7E6C-4EFE-8098-8F43D0A41410</string>
+			<string>DD7AD51D-C478-4F70-967C-B6B15F3A6253</string>
+		</dict>
+		<key>E577E536-3ED5-46F0-AF9D-DC6259ED63B9</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>0165D4BE-9F34-4539-A173-E8FB5C122875</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Final Project-2023.11.28_15-41-26--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Final Project project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Final Project</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Final Project</string>
+			<key>timeStartedRecording</key>
+			<real>722896886.29051101</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Final Project</string>
+			<key>uniqueIdentifier</key>
+			<string>E577E536-3ED5-46F0-AF9D-DC6259ED63B9</string>
 		</dict>
 	</dict>
 </dict>

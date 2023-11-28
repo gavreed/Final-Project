@@ -12,6 +12,7 @@
 
 #include "AI.h"
 #include <cassert>
+#include <string>
 
 // This file is used only in the Reach, not the Core.
 // You do not need to make any changes to this file for the Core
@@ -28,7 +29,7 @@ string getAIMoveString(const BuildingState& buildingState) {
             return "e0p";
         } else {
             int curFloor = buildingState.elevators[0].currentFloor;
-            int min = 0;
+            int min = MAX_PEOPLE_PER_FLOOR;
             int sub = 0;
             for(int i = 0; i < 10; i++) {
                 if(numPeop[i] != 0) {
@@ -81,40 +82,49 @@ string getAIMoveString(const BuildingState& buildingState) {
 
 string getAIPickupList(const Move& move, const BuildingState& buildingState, 
                        const Floor& floorToPickup) {
-    
-    int sumUp = 0;
-    int numUp = 0;
-    int PeopUp[10] = {};
-    int sumDown = 0;
-    int numDown = 0;
-    int PeopDown[10] = {};
-    double avgUp = 0;
-    double avgDown = 0;
-    
-    for(int i = 0; i < MAX_PEOPLE_PER_FLOOR; i++) {
-        if((floorToPickup.getPersonByIndex(i).getTargetFloor() - floorToPickup.getPersonByIndex(i).getCurrentFloor()) > 0) {
-            sumUp += floorToPickup.getPersonByIndex(i).getAngerLevel();
-            PeopUp[numUp] = i;
-            numUp++;
+    if(floorToPickup.getHasUpRequest() && floorToPickup.getHasDownRequest()) {
+        int sumUp = 0;
+        int numUp = 0;
+        int PeopUp[MAX_PEOPLE_PER_FLOOR] = {};
+        int sumDown = 0;
+        int numDown = 0;
+        int PeopDown[MAX_PEOPLE_PER_FLOOR] = {};
+        double avgUp = 0;
+        double avgDown = 0;
+        
+        for(int i = 0; i < floorToPickup.getNumPeople(); i++) {
+            if((floorToPickup.getPersonByIndex(i).getTargetFloor() - floorToPickup.getPersonByIndex(i).getCurrentFloor()) > 0) {
+                sumUp += floorToPickup.getPersonByIndex(i).getAngerLevel();
+                PeopUp[numUp] = i;
+                numUp++;
+            } else {
+                sumDown += floorToPickup.getPersonByIndex(i).getAngerLevel();
+                PeopDown[numDown] = i;
+                numDown++;
+            }
+        }
+        
+        avgUp = (double)sumUp / numUp;
+        avgDown = (double)sumDown / numDown;
+        string Pickup;
+        if(avgUp > avgDown) {
+            for(int i = 0; i < numUp; i++) {
+                Pickup += to_string(PeopUp[i]);
+            }
         } else {
-            sumDown += floorToPickup.getPersonByIndex(i).getAngerLevel();
-            PeopDown[numDown] = i;
-            numDown++;
+            for(int i = 0; i < numDown; i++) {
+                Pickup += to_string(PeopDown[i]);
+            }
         }
-    }
-    
-    avgUp = (double)sumUp / numUp;
-    avgDown = (double)sumDown / numDown;
-    string Pickup;
-    if(avgUp > avgDown) {
-        for(int i = 0; i < numUp; i++) {
-            Pickup += to_string(PeopUp[i]);
-        }
+        
+        cout << "Pick Up List: " << Pickup << endl;
+        return Pickup;
     } else {
-        for(int i = 0; i < numDown; i++) {
-            Pickup += to_string(PeopDown[i]);
+        string Pickup;
+        for(int i = 0; i < floorToPickup.getNumPeople(); i++) {
+            Pickup += to_string(i);
         }
+        
+        return Pickup;
     }
-    
-    return Pickup;
 }
