@@ -18,7 +18,7 @@
 // You do not need to make any changes to this file for the Core
 
 string closestPerson(const BuildingState& buildingState, int elevatorNum) {
-    int numPeop[10] = {};
+    int numPeop[NUM_FLOORS] = {};
     for(int floor = 0; floor < NUM_FLOORS; floor++) {
         numPeop[floor] = buildingState.floors[floor].numPeople;
     }
@@ -30,12 +30,14 @@ string closestPerson(const BuildingState& buildingState, int elevatorNum) {
         int min = NUM_FLOORS - 1;
         int sub = 0;
         int floorPick = 0;
-        for(int i = 0; i < 10; i++) {
-            if(numPeop[i] != 0) {
-                sub = abs(curFloor - i);
-                if(min > sub) {
+        for(int floor = 0; floor < NUM_FLOORS; floor++) {
+            if(numPeop[floor] != 0) {
+                sub = abs(curFloor - floor);
+                if(min > sub && (buildingState.elevators[0].targetFloor != floor) 
+                   && (buildingState.elevators[1].targetFloor != floor)
+                   && (buildingState.elevators[2].targetFloor != floor)) {
                     min = sub;
-                    floorPick = i;
+                    floorPick = floor;
                 }
             }
         }
@@ -51,10 +53,12 @@ string mostPeople(const BuildingState& buildingState, int elevatorNum) {
     
     int max = 0;
     int floorPick = 0;
-    for(int i = 0; i < 10; i++) {
-        if(max < numPeop[i]) {
-            max = numPeop[i];
-            floorPick = i;
+    for(int floor = 0; floor < NUM_FLOORS; floor++) {
+        if(max < numPeop[floor] && (buildingState.elevators[0].targetFloor != floor) 
+           && (buildingState.elevators[1].targetFloor != floor)
+           && (buildingState.elevators[2].targetFloor != floor)) {
+            max = numPeop[floor];
+            floorPick = floor;
         }
     }
     
@@ -73,7 +77,9 @@ string maxAnger(const BuildingState& buildingState, int elevatorNum) {
         for(int i = 0; i < MAX_PEOPLE_PER_FLOOR; i++) {
             anger += buildingState.floors[floor].people[i].angerLevel;
         }
-        if(max < anger) {
+        if(max < anger && (buildingState.elevators[0].targetFloor != floor) 
+           && (buildingState.elevators[1].targetFloor != floor)
+           && (buildingState.elevators[2].targetFloor != floor)) {
             max = anger;
             floorPick = floor;
         }
