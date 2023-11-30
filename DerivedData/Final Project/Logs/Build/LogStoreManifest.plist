@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>18B811F9-A452-4D9F-AAEB-9763406769D6</key>
+		<key>7773DCB8-5B76-43CC-9F3F-03EA9F2055F7</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>18B811F9-A452-4D9F-AAEB-9763406769D6.xcactivitylog</string>
+			<string>7773DCB8-5B76-43CC-9F3F-03EA9F2055F7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,13 +40,55 @@
 			<key>signature</key>
 			<string>Build Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>723077295.73500597</real>
+			<real>723078307.24164104</real>
 			<key>timeStoppedRecording</key>
-			<real>723077295.90056503</real>
+			<real>723078307.79088795</real>
 			<key>title</key>
 			<string>Build Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>18B811F9-A452-4D9F-AAEB-9763406769D6</string>
+			<string>7773DCB8-5B76-43CC-9F3F-03EA9F2055F7</string>
+		</dict>
+		<key>D05DF2E0-EDC4-47FA-A214-F01968797688</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D05DF2E0-EDC4-47FA-A214-F01968797688.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Final Project project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Final Project</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Final Project</string>
+			<key>timeStartedRecording</key>
+			<real>723078317.30499399</real>
+			<key>timeStoppedRecording</key>
+			<real>723078317.47636998</real>
+			<key>title</key>
+			<string>Build Final Project</string>
+			<key>uniqueIdentifier</key>
+			<string>D05DF2E0-EDC4-47FA-A214-F01968797688</string>
 		</dict>
 	</dict>
 </dict>

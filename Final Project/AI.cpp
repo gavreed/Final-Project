@@ -17,25 +17,30 @@
 // This file is used only in the Reach, not the Core.
 // You do not need to make any changes to this file for the Core
 
+void elevtorChoose(int& elev1, int& elev2, int elevatorNum);
+
 string closestPerson(const BuildingState& buildingState, int elevatorNum) {
+    int elev1;
+    int elev2;
+    elevtorChoose(elev1, elev2, elevatorNum);
+    
     int numPeop[NUM_FLOORS] = {};
     for(int floor = 0; floor < NUM_FLOORS; floor++) {
         numPeop[floor] = buildingState.floors[floor].numPeople;
     }
     
-    if(buildingState.floors[buildingState.elevators[0].currentFloor].numPeople > 0) {
+    if(buildingState.floors[buildingState.elevators[elevatorNum].currentFloor].numPeople > 0) {
         return "e" + to_string(elevatorNum) + "p";
     } else {
-        int curFloor = buildingState.elevators[0].currentFloor;
+        int curFloor = buildingState.elevators[elevatorNum].currentFloor;
         int min = NUM_FLOORS - 1;
         int sub = 0;
         int floorPick = 0;
         for(int floor = 0; floor < NUM_FLOORS; floor++) {
             if(numPeop[floor] != 0) {
                 sub = abs(curFloor - floor);
-                if(min > sub && (buildingState.elevators[0].targetFloor != floor) 
-                   && (buildingState.elevators[1].targetFloor != floor)
-                   && (buildingState.elevators[2].targetFloor != floor)) {
+                if(min > sub && (buildingState.elevators[elev1].targetFloor != floor)
+                   && (buildingState.elevators[elev2].targetFloor != floor)) {
                     min = sub;
                     floorPick = floor;
                 }
@@ -46,6 +51,10 @@ string closestPerson(const BuildingState& buildingState, int elevatorNum) {
 }
 
 string mostPeople(const BuildingState& buildingState, int elevatorNum) {
+    int elev1;
+    int elev2;
+    elevtorChoose(elev1, elev2, elevatorNum);
+    
     int numPeop[10] = {};
     for(int floor = 0; floor < NUM_FLOORS; floor++) {
         numPeop[floor] = buildingState.floors[floor].numPeople;
@@ -54,9 +63,8 @@ string mostPeople(const BuildingState& buildingState, int elevatorNum) {
     int max = 0;
     int floorPick = 0;
     for(int floor = 0; floor < NUM_FLOORS; floor++) {
-        if(max < numPeop[floor] && (buildingState.elevators[0].targetFloor != floor) 
-           && (buildingState.elevators[1].targetFloor != floor)
-           && (buildingState.elevators[2].targetFloor != floor)) {
+        if(max < numPeop[floor] && (buildingState.elevators[elev1].targetFloor != floor)
+           && (buildingState.elevators[elev2].targetFloor != floor)) {
             max = numPeop[floor];
             floorPick = floor;
         }
@@ -70,6 +78,10 @@ string mostPeople(const BuildingState& buildingState, int elevatorNum) {
 }
 
 string maxAnger(const BuildingState& buildingState, int elevatorNum) {
+    int elev1;
+    int elev2;
+    elevtorChoose(elev1, elev2, elevatorNum);
+    
     int anger = 0;
     int max = 0;
     int floorPick = 0;
@@ -77,9 +89,8 @@ string maxAnger(const BuildingState& buildingState, int elevatorNum) {
         for(int i = 0; i < MAX_PEOPLE_PER_FLOOR; i++) {
             anger += buildingState.floors[floor].people[i].angerLevel;
         }
-        if(max < anger && (buildingState.elevators[0].targetFloor != floor) 
-           && (buildingState.elevators[1].targetFloor != floor)
-           && (buildingState.elevators[2].targetFloor != floor)) {
+        if(max < anger && (buildingState.elevators[elev1].targetFloor != floor)
+           && (buildingState.elevators[elev2].targetFloor != floor)) {
             max = anger;
             floorPick = floor;
         }
@@ -90,13 +101,26 @@ string maxAnger(const BuildingState& buildingState, int elevatorNum) {
         closestPerson(buildingState, elevatorNum);
     }
     
-    if(buildingState.elevators[2].currentFloor == floorPick) {
+    if(buildingState.elevators[elevatorNum].currentFloor == floorPick) {
         return "e" + to_string(elevatorNum) + "p";
     } else {
         return "e" + to_string(elevatorNum) + "f" + to_string(floorPick);
     }
 }
 
+void elevtorChoose(int& elev1, int& elev2, int elevatorNum) {
+    if(elevatorNum == 0) {
+        elev1 = 1;
+        elev2 = 2;
+    } else if(elevatorNum == 1) {
+        elev1 = 0;
+        elev2 = 2;
+    } else {
+        elev1 = 0;
+        elev2 = 1;
+    }
+}
+                    
 string getAIMoveString(const BuildingState& buildingState) {
     
     int numPeop[10] = {};
@@ -125,7 +149,8 @@ string getAIMoveString(const BuildingState& buildingState) {
     return "";
 }
 
-string getAIPickupList(const Move& move, const BuildingState& buildingState, 
+
+string getAIPickupList(const Move& move, const BuildingState& buildingState,
                        const Floor& floorToPickup) {
     if(floorToPickup.getHasUpRequest() && floorToPickup.getHasDownRequest()) {
         int sumUp = 0;
