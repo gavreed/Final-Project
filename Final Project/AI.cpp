@@ -98,7 +98,7 @@ string maxAnger(const BuildingState& buildingState, int elevatorNum) {
     }
     
     if(max == 0) {
-        closestPerson(buildingState, elevatorNum);
+        return closestPerson(buildingState, elevatorNum);
     }
     
     if(buildingState.elevators[elevatorNum].currentFloor == floorPick) {

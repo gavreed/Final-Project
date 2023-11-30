@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>7773DCB8-5B76-43CC-9F3F-03EA9F2055F7</key>
+		<key>2B525A95-DB50-4D8F-B881-F7D29A250C96</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>7773DCB8-5B76-43CC-9F3F-03EA9F2055F7.xcactivitylog</string>
+			<string>2B525A95-DB50-4D8F-B881-F7D29A250C96.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,15 +40,15 @@
 			<key>signature</key>
 			<string>Build Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>723078307.24164104</real>
+			<real>723079401.13349104</real>
 			<key>timeStoppedRecording</key>
-			<real>723078307.79088795</real>
+			<real>723079401.18315995</real>
 			<key>title</key>
 			<string>Build Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>7773DCB8-5B76-43CC-9F3F-03EA9F2055F7</string>
+			<string>2B525A95-DB50-4D8F-B881-F7D29A250C96</string>
 		</dict>
-		<key>D05DF2E0-EDC4-47FA-A214-F01968797688</key>
+		<key>33D1F70E-8574-41F5-97A6-3CFFC66469A4</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>D05DF2E0-EDC4-47FA-A214-F01968797688.xcactivitylog</string>
+			<string>33D1F70E-8574-41F5-97A6-3CFFC66469A4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>Build Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>723078317.30499399</real>
+			<real>723079408.84529901</real>
 			<key>timeStoppedRecording</key>
-			<real>723078317.47636998</real>
+			<real>723079409.00466502</real>
 			<key>title</key>
 			<string>Build Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>D05DF2E0-EDC4-47FA-A214-F01968797688</string>
+			<string>33D1F70E-8574-41F5-97A6-3CFFC66469A4</string>
 		</dict>
 	</dict>
 </dict>
