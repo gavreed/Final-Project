@@ -6,10 +6,10 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>DD7AD51D-C478-4F70-967C-B6B15F3A6253</key>
+		<key>3D0998D6-443D-46D6-BDD0-271F37431B17</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>2B5D07E9-17B1-4963-8E98-9B57209D21F8</string>
+			<string>4BB62B0D-7B78-4775-A266-3DFB35968465</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-Final Project-2023.11.28_15-52-31--0500.xcresult</string>
+			<string>Run-Final Project-2023.11.30_13-49-23--0500.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -59,18 +59,18 @@
 			<key>signature</key>
 			<string>Run Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>722897551.06671</real>
+			<real>723062963.10530806</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>DD7AD51D-C478-4F70-967C-B6B15F3A6253</string>
+			<string>3D0998D6-443D-46D6-BDD0-271F37431B17</string>
 		</dict>
-		<key>E577E536-3ED5-46F0-AF9D-DC6259ED63B9</key>
+		<key>98DF8465-27E2-45BC-9608-722D9630A176</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>0165D4BE-9F34-4539-A173-E8FB5C122875</string>
+			<string>C66176F2-67D2-424B-8438-A0CE3517A39B</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -91,7 +91,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-Final Project-2023.11.28_15-41-26--0500.xcresult</string>
+			<string>Run-Final Project-2023.11.30_13-48-36--0500.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -120,13 +120,13 @@
 			<key>signature</key>
 			<string>Run Final Project</string>
 			<key>timeStartedRecording</key>
-			<real>722896886.29051101</real>
+			<real>723062916.85019696</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Final Project</string>
 			<key>uniqueIdentifier</key>
-			<string>E577E536-3ED5-46F0-AF9D-DC6259ED63B9</string>
+			<string>98DF8465-27E2-45BC-9608-722D9630A176</string>
 		</dict>
 	</dict>
 </dict>
