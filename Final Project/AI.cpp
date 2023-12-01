@@ -33,9 +33,9 @@ string closestPerson(const BuildingState& buildingState, int elevatorNum) {
         return "e" + to_string(elevatorNum) + "p";
     } else {
         int curFloor = buildingState.elevators[elevatorNum].currentFloor;
-        int min = NUM_FLOORS - 1;
+        int min = NUM_FLOORS;
         int sub = 0;
-        int floorPick = 0;
+        int floorPick = -1;
         for(int floor = 0; floor < NUM_FLOORS; floor++) {
             if(numPeop[floor] != 0) {
                 sub = abs(curFloor - floor);
@@ -46,6 +46,11 @@ string closestPerson(const BuildingState& buildingState, int elevatorNum) {
                 }
             }
         }
+        
+        if(floorPick == -1) {
+            return "";
+        }
+        
         return "e" + to_string(elevatorNum) + "f" + to_string(floorPick);
     }
 }
@@ -62,12 +67,18 @@ string mostPeople(const BuildingState& buildingState, int elevatorNum) {
     
     int max = 0;
     int floorPick = 0;
+    bool picked = false;
     for(int floor = 0; floor < NUM_FLOORS; floor++) {
         if(max < numPeop[floor] && (buildingState.elevators[elev1].targetFloor != floor)
            && (buildingState.elevators[elev2].targetFloor != floor)) {
             max = numPeop[floor];
             floorPick = floor;
+            picked = true;
         }
+    }
+    
+    if(!picked) {
+        return "";
     }
     
     if(buildingState.elevators[1].currentFloor == floorPick) {
